@@ -18,21 +18,17 @@
     </div>
     
     <div class="reviews-section">
-        <h2>Отзывы покупателей</h2>
-        <div class="reviews-list">
-            {% for review in reviews %}
-            <div class="review-card">
-                <div class="review-header">
-                    <span class="reviewer-name">{{ review.0 }}</span>
-                    <div class="review-stars">
-                        {% for i in "12345" %}
-                            {% if forloop.counter <= review.1 %}★{% else %}☆{% endif %}
-                        {% endfor %}
-                    </div>
+        <h2>Отзыв покупателя</h2>
+        <div class="review-card">
+            <div class="review-header">
+                <span class="reviewer-name">{{ review.0 }}</span>
+                <div class="review-stars">
+                    {% for i in "12345" %}
+                        {% if forloop.counter <= review.1 %}★{% else %}☆{% endif %}
+                    {% endfor %}
                 </div>
-                <p class="review-text">{{ review.2 }}</p>
             </div>
-            {% endfor %}
+            <p class="review-text">{{ review.2 }}</p>
         </div>
     </div>
 </div>
