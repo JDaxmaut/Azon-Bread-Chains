@@ -4,13 +4,19 @@
 
 {% block content %}
 <h1>Наши товары</h1>
-<ul>
+
+<div class="products-grid">
     {% for i in item_count %}
-    <li>
-        <a href="{% url 'product' id=forloop.counter %}">
-            Товар {{ forloop.counter }} - ${{ forloop.counter }}0
-        </a>
-    </li>
+    <a href="{% url 'product' id=forloop.counter %}" class="product-card">
+        <div class="product-image">
+            <img src="https://i.guim.co.uk/img/media/85b5c0ba3d6036d58729076b5ef59de798ee2937/0_43_3465_4157/master/3465.jpg?width=465&dpr=1&s=none&crop=none" alt="Товар {{ forloop.counter }}">
+        </div>
+        <div class="product-info">
+            <h3>Товар {{ forloop.counter }}</h3>
+            <p class="product-desc">Описание товара {{ forloop.counter }}</p>
+            <p class="product-price">${{ forloop.counter }}0</p>
+        </div>
+    </a>
     {% endfor %}
-</ul>
+</div>
 {% endblock %}
