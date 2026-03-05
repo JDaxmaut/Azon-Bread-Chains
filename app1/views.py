@@ -90,9 +90,13 @@ def fines_page(request):
 
 def complaints_page(request):
     submitted = False
+    friend_submitted = False
     if request.method == "POST":
-        submitted = True
-    data = {"submitted": submitted}
+        if 'friend_name' in request.POST:
+            friend_submitted = True
+        else:
+            submitted = True
+    data = {"submitted": submitted, "friend_submitted": friend_submitted}
     return render(request, "complaints.html", context=data)
 
 def product_page(request, id):

@@ -674,3 +674,76 @@ a:hover {
     font-size: 13px;
     color: var(--text-secondary);
 }
+
+.section-divider {
+    border: none;
+    height: 1px;
+    background: var(--border);
+    margin: 40px 0;
+}
+
+.referral-title {
+    font-size: 24px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.referral-description {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.referral-success {
+    padding: 25px;
+    background: var(--bg-secondary);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.referral-success strong {
+    display: block;
+    color: var(--accent);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.referral-success p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.referral-form {
+    max-width: 600px;
+}
+
+.btn-referral {
+    display: inline-block;
+    padding: 24px 48px;
+    background: #ff6b6b;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-referral:hover {
+    background: #ff8787;
+    transform: scale(1.02);
+}
+
+.referral-note {
+    margin-top: 15px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-style: italic;
+}
