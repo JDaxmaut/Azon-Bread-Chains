@@ -13,7 +13,7 @@ AZON Platform: System of Digital Slavery
     Клонируй репозиторий:
     bash
 
-    git clone https://github.com
+    git clone https://github.com/JDaxmaut/Azon-Bread-Chains
 
     Внимание: за каждый скачанный мегабайт из зарплаты вычитается стоимость одной булки.
     Создай виртуальное окружение:
