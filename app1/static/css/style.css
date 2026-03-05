@@ -124,7 +124,8 @@ form label {
 
 input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"],
+input[type="tel"] {
     width: 100%;
     padding: 10px 12px;
     background: var(--bg-secondary);
@@ -644,7 +645,12 @@ a:hover {
 }
 
 .complaint-form textarea,
-.complaint-form input[type="email"] {
+.complaint-form input[type="email"],
+.complaint-form input[type="text"],
+.complaint-form input[type="tel"],
+.referral-form input[type="email"],
+.referral-form input[type="text"],
+.referral-form input[type="tel"] {
     width: 100%;
     padding: 12px;
     background: var(--bg-secondary);
