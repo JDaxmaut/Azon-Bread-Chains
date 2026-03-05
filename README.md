@@ -15,7 +15,6 @@ AZON Platform: System of Digital Slavery
 
     git clone https://github.com
 
-    Используйте код с осторожностью.
     Внимание: за каждый скачанный мегабайт из зарплаты вычитается стоимость одной булки.
     Создай виртуальное окружение:
     bash
@@ -23,20 +22,17 @@ AZON Platform: System of Digital Slavery
     python -m venv venv
     source venv/bin/activate  # На Windows ты будешь страдать дольше
 
-    Используйте код с осторожностью.
     Установи зависимости:
     bash
 
     pip install -r requirements.txt
 
-    Используйте код с осторожностью.
     Если установка упадет — это твоя вина. Штраф 500р.
     Примени миграции:
     bash
 
     python manage.py migrate
 
-    Используйте код с осторожностью.
     Миграции переносят твою душу на наши сервера.
 
 Система лояльности «Друг за сухарик»
